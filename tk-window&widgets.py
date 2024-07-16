@@ -40,7 +40,6 @@ button.pack()
 exercise_button = ttk.Button(master = window, text = 'Bem doido', command = lambda: print('hello'))
 exercise_button.pack()
 
-# |------- Exercise ------- |
 
 # rodar
 window.mainloop()

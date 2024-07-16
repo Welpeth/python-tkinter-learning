@@ -22,6 +22,15 @@ btn.pack()
 #events
 
 btn.bind('<Alt-KeyPress-a>', lambda event: print(event))
+window.bind('<KeyPress>', lambda event: print(f'a button was pressed ({event.char})'))
 window.bind('<Motion>', get_pos)
 
+entry.bind('<FocusIn>', lambda event: print('entry field was selected'))
+entry.bind('<FocusOut>', lambda event: print('entry field was unselected'))
+
+#Exercise
+
+text.bind('<Shift-MouseWheel>', lambda event: print('MouseWheel'))
+
+#run 
 window.mainloop()
